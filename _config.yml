@@ -1,0 +1,10 @@
+layouts_dir:  ./_jekyll/_layouts
+exclude:
+  - README.markdown
+  - Makefile
+encoding: "utf-8"
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: "\n\n\n\n"
+sass:
+    style: compressed
