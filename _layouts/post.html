@@ -5,10 +5,10 @@ layout: base
     <nav class="tabs is-boxed">
      <div class="container">
       <ul>
-       <li class="is-active">
+       <li>
         <a href="/">Overview</a>
        </li>
-       <li >
+       <li>
         <a href="/news/">News</a>
        </li>
       </ul>
@@ -16,10 +16,15 @@ layout: base
     </nav>
    </div>
   </section>
-
 <section class="section">
  <div class="container">
   <div class="content">
+
+    <h1>{{ page.title }}</h1>
+
+    <span class="byline">{{ page.date | date: "%B %-d, %Y" }} by <a href="https://github.com/{{ page.author }}">@{{ page.author }}</a></span>
+
+    <hr>
 
     {{ content }}
 

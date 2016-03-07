@@ -8,3 +8,4 @@ highlighter: rouge
 excerpt_separator: "\n\n\n\n"
 sass:
     style: compressed
+permalink: news/:year/:title/
