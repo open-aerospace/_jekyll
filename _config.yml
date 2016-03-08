@@ -2,6 +2,7 @@ layouts_dir:  ./_jekyll/_layouts
 exclude:
   - README.markdown
   - Makefile
+  - assets/img/Makefile
 encoding: "utf-8"
 markdown: kramdown
 highlighter: rouge
