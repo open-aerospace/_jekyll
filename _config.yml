@@ -10,7 +10,7 @@ highlighter: rouge
 excerpt_separator: "\n\n\n\n"
 sass:
     style: compressed
-permalink: news/:year/:title/
+permalink: :categories/:year/:title/
 
 # Site definitions:
 site_title: "Open Source Aerospace Computing"
