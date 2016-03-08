@@ -1,3 +1,4 @@
+# Jekyll Stuff:
 layouts_dir:  ./_jekyll/_layouts
 exclude:
   - README.markdown
@@ -10,3 +11,7 @@ excerpt_separator: "\n\n\n\n"
 sass:
     style: compressed
 permalink: news/:year/:title/
+
+# Site definitions:
+site_title: "Open Source Aerospace Computing"
+site_subtitle: "Modeling **rockets** with open source tools and methods"

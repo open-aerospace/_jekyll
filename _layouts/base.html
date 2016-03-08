@@ -74,10 +74,10 @@
    <div class="hero-content">
     <div class="container">
      <p class="title">
-      Open Source Aerospace
+      {{ site.site_title }}
      </p>
      <p class="subtitle">
-      Scientific computing for rockets because <strong>space is hard</strong>
+      {{ site.site_subtitle | markdownify | remove: "<p>" | remove: "</p>" }}
      </p>
     </div>
    </div>
