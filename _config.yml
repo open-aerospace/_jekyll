@@ -6,6 +6,7 @@ exclude:
   - assets/img/Makefile
   - matplotlibrc
   - site-markdown.tpl
+  - deploy.sh
 encoding: "utf-8"
 markdown: kramdown
 highlighter: rouge
