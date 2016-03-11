@@ -18,3 +18,14 @@ permalink: :categories/:year/:title/
 # Site definitions:
 site_title: "Open Source Aerospace Computing"
 site_subtitle: "Modeling **rockets** with open source tools and methods"
+
+nav:
+  - title: Home
+    url: /
+    name: home
+  - title: News
+    url: /news/
+    name: news
+  - title: "JSBSim: NASA Test Cases"
+    url: /jsbsim-nasa-test-cases/
+    name: jsbsimtest

@@ -1,24 +1,21 @@
 ---
 layout: base
 ---
-   <div class="hero-footer">
-    <nav class="tabs is-boxed">
-     <div class="container">
-      <ul>
-       <li>
-        <a href="/">Overview</a>
-       </li>
-       <li>
-        <a href="/news/">News</a>
-       </li>
-      </ul>
-     </div>
-    </nav>
-   </div>
-  </section>
+
+<nav class="header has-shadow">
+  <div class="container">
+    <div class="header-left">
+    {% for n in site.data.project.nav %}
+      <a class="header-tab {% if page.url == n.url %}is-active{% endif %}" href="/jsbsim-nasa-test-cases{{ n.url }}">{{ n.title }}</a>
+    {% endfor %}
+    </div>
+  </div>
+</nav>
+
 <section class="section">
  <div class="container">
   <div class="content">
+
 
     {{ content }}
 
