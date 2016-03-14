@@ -9,11 +9,16 @@ exclude:
   - deploy.sh
 encoding: "utf-8"
 markdown: kramdown
+kramdown:
+  toc_levels: "2,3"
 highlighter: rouge
 excerpt_separator: "\n\n\n\n"
 sass:
     style: compressed
 permalink: :categories/:year/:title/
+gems:
+  - jekyll-sitemap
+
 
 # Site definitions:
 site_title: "Open Source Aerospace Computing"
@@ -26,6 +31,9 @@ nav:
   - title: News
     url: /news/
     name: news
+  - title: How To Simulate A Rocket
+    url: /simulate/
+    name: simulate
   - title: "JSBSim: NASA Test Cases"
     url: /jsbsim-nasa-test-cases/
     name: jsbsimtest
