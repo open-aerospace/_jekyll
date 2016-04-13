@@ -8,7 +8,7 @@ exclude:
   - matplotlibrc
   - site-markdown.tpl
   - deploy.sh
-  - "primary sources"
+  - primary sources
 encoding: "utf-8"
 markdown: kramdown
 kramdown:
