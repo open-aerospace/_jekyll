@@ -2,11 +2,13 @@
 layouts_dir:  ./_jekyll/_layouts
 exclude:
   - README.markdown
+  - LICENSE
   - Makefile
   - assets/img/Makefile
   - matplotlibrc
   - site-markdown.tpl
   - deploy.sh
+  - "primary sources"
 encoding: "utf-8"
 markdown: kramdown
 kramdown:
@@ -16,8 +18,6 @@ excerpt_separator: "\n\n\n\n"
 sass:
     style: compressed
 permalink: :categories/:year/:title/
-gems:
-  - jekyll-sitemap
 
 
 # Site definitions:
