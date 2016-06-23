@@ -48,55 +48,8 @@
  <body>
 
   <section class="hero is-primary is-left is-bold">
-   <div class="hero-header">
-    <header class="header">
-     <div class="container">
-
-      <div class="header-left">
-       <a class="header-item" href="/">
-        <img src="/assets/img/title.png" alt="open-aerospace">
-       </a>
-      </div>
-
-      <div id="header-menu" class="header-right header-menu">
-       <span class="header-item">
-        <a  href="/">Home</a>
-       </span>
-       <span class="header-item">
-        <a  href="/about/">About</a>
-       </span>
-       <span class="header-item">
-        <a class="button is-info is-outlined is-inverted" href="https://github.com/open-aerospace">
-         <i class="fa fa-github"></i>
-         GitHub
-         </a>
-       </span>
-      </div>
-     </div>
-    </header>
-   </div>
-   <div class="hero-content">
-    <div class="container">
-     <p class="title">
-      {{ site.site_title }}
-     </p>
-     <p class="subtitle">
-      {{ site.site_subtitle | markdownify | remove: "<p>" | remove: "</p>" }}
-     </p>
-    </div>
-   </div>
-
-   <div class="hero-footer">
-    <nav class="tabs is-boxed">
-     <div class="container">
-      <ul>
-        {% for n in site.nav %}
-        <li class="{% if page.page == n.name %}is-active{% endif %}"><a href="{{ n.url }}">{{ n.title }}</a></li>
-        {% endfor %}
-      </ul>
-     </div>
-    </nav>
-   </div>
+    {% include topheader.html %}
+    {% include heroheader.html %}
   </section>
 
 

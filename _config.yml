@@ -1,5 +1,7 @@
 # Jekyll Stuff:
 layouts_dir:  ./_jekyll/_layouts
+includes_dir:  ./_jekyll/_includes
+
 exclude:
   - README.markdown
   - LICENSE

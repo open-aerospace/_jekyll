@@ -1,0 +1,23 @@
+   <div class="hero-content">
+    <div class="container">
+     <p class="title">
+      {{ site.data.local.title }}
+     </p>
+     <p class="subtitle">
+      {{ site.data.local.subtitle | markdownify | remove: "<p>" | remove: "</p>" }}
+     </p>
+    </div>
+   </div>
+
+   <div class="hero-footer">
+    <nav class="tabs is-boxed">
+     <div class="container">
+      <ul>
+        {% for n in site.data.local.nav %}
+        <li class="{% if page.page == n.name %}is-active{% endif %}"><a href="{{ n.url }}">{{ n.title }}</a></li>
+        {% endfor %}
+      </ul>
+     </div>
+    </nav>
+   </div>
+
