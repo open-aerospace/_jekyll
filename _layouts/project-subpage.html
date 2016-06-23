@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+<nav class="nav has-shadow">
+  <div class="container">
+    <div class="nav-left">
+    {% for thispage in site.data.local.subnav %}
+      {% if thispage[0] == page.page %}
+        {% for nav in thispage[1] %}
+          <a class="nav-item is-tab {% if page.subpage == nav.name %}is-active{% endif %}" href="{{ nav.url }}">{{ nav.title }}</a>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+ <div class="container">
+  <div class="content">
+
+    {{ content }}
+
+  </div>
+ </div>
+</section>
