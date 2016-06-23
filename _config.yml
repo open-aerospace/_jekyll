@@ -27,16 +27,4 @@ permalink: :categories/:year/:title/
 site_title: "Open Source Aerospace Computing"
 site_subtitle: "Modeling **rockets** with open source tools and methods"
 
-nav:
-  - title: Home
-    url: /
-    name: home
-  - title: News
-    url: /news/
-    name: news
-  - title: How To Simulate A Rocket
-    url: /simulate/
-    name: simulate
-  - title: "JSBSim: NASA Test Cases"
-    url: /jsbsim-nasa-test-cases/
-    name: jsbsimtest
+
